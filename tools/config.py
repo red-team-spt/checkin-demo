@@ -1,4 +1,6 @@
-# demo config (FAKE values, invented for a scanner test)
-GITHUB_TOKEN = "ghp_ShXcCxLrak5qc5oOpZf6exseO8Yz68zE2Dwi"
-AWS_ACCESS_KEY_ID = "AKIANNQQ0FWVO4XIM9JD"
-AWS_SECRET_ACCESS_KEY = "aTORtSJeX2skbuCOXd2JHNzG804Ts1NiYJS6COj8"
+"""Credentials are read from the environment, never stored in code."""
+import os
+
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
+AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
+AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
