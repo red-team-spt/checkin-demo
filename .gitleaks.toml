@@ -1,0 +1,4 @@
+[allowlist]
+description = "test"
+paths = ['''tmp_test/.*''']
+regexes = ['''ghp_[A-Za-z0-9]+''']
